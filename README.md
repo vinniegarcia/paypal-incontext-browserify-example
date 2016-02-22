@@ -1,4 +1,4 @@
-# paypal-incontext-browserify
+# PayPal In-Context Browserify Example
 An example of a PayPal In-Context checkout integration using browserify and browserify-shim
 
 ## Getting started
