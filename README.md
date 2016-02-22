@@ -35,7 +35,7 @@ An example of a PayPal In-Context checkout integration using browserify and brow
   <script src="path/to/dist/js/bundle.js"></script>
   ```
   
-5. In your code, use the `paypal-incontext` module:
+5. In your code, use the `paypal-incontext` module you defined previously:
   
   ```javascript
   var paypal = require('paypal-incontext');
