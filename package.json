@@ -1,0 +1,48 @@
+{
+  "name": "paypal-incontext-browserify",
+  "version": "1.0.0",
+  "description": "Example config to use PayPal incontext as a Browserify external",
+  "main": "index.js",
+  "browser": "dist/index.js",
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "paypal-incontext": "global:paypal"
+  },
+  "scripts": {
+    "precopy": "npm run lint",
+    "copy": "cpy node_modules/milligram/dist/milligram.css demo/css/",
+    "prebuild": "npm run copy",
+    "build": "browserify -d src/ -o dist/bundle.js",
+    "lint": "eslint src/**/*",
+    "prestart": "npm run build",
+    "start": "http-server -p 8080",
+    "pretest": "npm run build",
+    "test": "zuul --local 8080 -- test"
+  },
+  "keywords": [
+    "paypal",
+    "incontext",
+    "browserify",
+    "browserify-shim"
+  ],
+  "author": "vinnie garcia <vg@vinniegarcia.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "browserify-shim": "^3.8.12",
+    "cpy-cli": "^1.0.0",
+    "eslint": "^2.2.0",
+    "request": "^2.69.0",
+    "tape": "^4.4.0",
+    "zuul": "^3.9.0"
+  },
+  "dependencies": {
+    "http-server": "^0.9.0",
+    "jquery": "^2.2.0",
+    "milligram": "^1.1.0"
+  }
+}

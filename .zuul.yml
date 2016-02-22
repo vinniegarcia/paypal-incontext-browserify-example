@@ -1,0 +1,7 @@
+ui: tape
+browserify:
+  - transform: browserify-shim
+browsers:
+  # your browsers here, for example:
+  - name: chrome
+    version: latest
