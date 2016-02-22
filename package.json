@@ -1,5 +1,5 @@
 {
-  "name": "paypal-incontext-browserify",
+  "name": "paypal-incontext-browserify-example",
   "version": "1.0.0",
   "description": "Example config to use PayPal incontext as a Browserify external",
   "main": "index.js",
