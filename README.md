@@ -38,4 +38,4 @@ An example of a PayPal In-Context checkout integration using browserify and brow
   ```
   browserify -d src/ -o dist/js/bundle.js
   ```
-7. Take orders and make money! 💰�7.💳 Take orders and make money! 💰�
+7. Take orders and make money! 💰💳💸
